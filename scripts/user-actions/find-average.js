@@ -14,8 +14,16 @@ const reduceToAverage = (arrOfNumbers) => {
   if (!arrOfNumbers.every(entry => typeof entry === 'number')) {
     throw new TypeError('parameter must contain only numbers')
   }
-
-  // write the logic
+  
+  let sum = 0;
+  for (let number of arrOfNumbers) {
+    sum += number;
+  }
+  if (arrOfNumbers.length > 0) {
+    return sum / arrOfNumbers.length;
+  } else {
+    return 0;
+  }
 };
 
 

@@ -15,9 +15,16 @@ const reduceForAlert = (arrOfNumbers) => {
   if (!arrOfNumbers.every(entry => typeof entry === 'number')) {
     throw new TypeError('parameter must contain only numbers')
   }
-
-  // write the logic!
+  let value = " ";
+    
+  for(let i = 0; i <  numbers.length; i++){
+   value = value +  numbers[i] + '\n';
+}
+  
+// display.innerHTML = value;
+ alert(value);
 };
+
 
 
 
